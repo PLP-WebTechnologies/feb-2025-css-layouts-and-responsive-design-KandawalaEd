@@ -1,0 +1,133 @@
+body, html {
+    background-color: bisque;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+main {
+    flex-basis: 1;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: black;
+    color: white;
+    
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: red;
+}
+
+a:active {
+    color: green;
+}
+
+a:visited {
+    color: blue;
+}
+
+#intro {
+    padding-top: 30px;
+}
+
+#intro > h1 {
+    text-align: center;
+}
+
+.founder {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    
+}
+
+.founder img {
+    flex: 0 1 20%;
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+    width: 20vh;
+}
+
+.founder > p {
+    flex: 1;
+    max-width: 100%;
+}
+
+.deal {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.vehicles {
+    flex: 0 0 30%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.vehicles img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    z-index: 1;
+    background-color: black;
+    color: white;
+
+}
+
+@media (min-width: 576px) {
+    .deal {
+        flex-direction: column;
+    }
+    .vehicles {
+        flex: 0 0 100%;
+    }
+    .founder {
+        flex-direction: column;
+    }
+    .founder .img {
+        flex: 0 0 100%
+    }
+}
+
+@media (min-width: 768px) {
+    .deal {
+        flex-wrap: wrap;
+    }
+    .vehicles {
+        flex: 0 0 50%;
+    }
+}

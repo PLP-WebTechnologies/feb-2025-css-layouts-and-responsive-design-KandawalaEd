@@ -108,7 +108,7 @@ footer {
 
 }
 
-@media (min-width: 576px) {
+@media (max-width: 576px) {
     .deal {
         flex-direction: column;
     }
@@ -123,11 +123,14 @@ footer {
     }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 769px) {
     .deal {
         flex-wrap: wrap;
     }
     .vehicles {
-        flex: 0 0 50%;
+        flex: 0 0 40%;
+    }
+    .vehicles img {
+        max-width: 100%;
     }
 }
